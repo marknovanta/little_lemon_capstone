@@ -23,7 +23,7 @@ const Specials = () => {
         },
     ]
 
-    const listItems = items.map((item) => 
+    const listItems = items.map((item) =>
         <div key={item.id} className="special-card">
             <img src={item.img} width="250px"/>
             <div className="padding">
@@ -31,8 +31,8 @@ const Specials = () => {
                 <p>{item.description}</p>
                 <p className="price">${item.price}</p>
             </div>
-        </div> 
-    ); 
+        </div>
+    );
 
     return(
         <div className="specials">
