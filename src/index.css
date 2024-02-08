@@ -12,11 +12,17 @@ code {
     monospace;
 }
 
-.flex {
+.flex-container {
   display: flex;
 
   align-items: stretch;
   justify-content: space-evenly;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
 }
 
 ul {

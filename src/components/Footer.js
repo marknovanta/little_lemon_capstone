@@ -1,6 +1,6 @@
 const Footer = () => {
     return(
-        <footer className="flex">
+        <footer className="flex-container">
             <img src="./assets/favilogo.png" alt="Little Lemon Logo" width="150px"/>
             <div>
                 <ul>
