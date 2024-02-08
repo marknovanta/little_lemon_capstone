@@ -1,6 +1,6 @@
 const Main = () => {
     return(
-        <main></main>
+        <main>Hello, world!</main>
     )
 }
 

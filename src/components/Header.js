@@ -1,7 +1,7 @@
 const Header = () => {
     return(
-        <header>
-            <img src="#" alt="Little Lemon Logo"/>
+        <header className="flex">
+            <img src="./assets/logo.jpg" alt="Little Lemon Logo" width="300px"/>
         </header>
     )
 }
