@@ -1,7 +1,7 @@
 const Footer = () => {
     return(
         <footer className="flex-container">
-            <img src="./assets/favilogo.png" alt="Little Lemon Logo" width="150px"/>
+            <img id="footer-logo" src="./assets/favilogo.png" alt="Little Lemon Logo" width="150px"/>
             <div>
                 <ul>
                     <li className="bold">Doormat Navigation</li>

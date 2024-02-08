@@ -23,6 +23,12 @@ code {
   .flex-container {
     flex-direction: column;
   }
+  #header-logo {
+    width: 200px;
+  }
+  #footer-logo {
+    width: 100px;
+  }
 }
 
 ul {
