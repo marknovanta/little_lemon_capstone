@@ -37,6 +37,9 @@ code {
   #footer-logo {
     width: 100px;
   }
+  .jumbo {
+    flex-wrap: wrap;
+  }
 }
 
 ul {
@@ -46,4 +49,89 @@ ul {
 .bold {
   font-weight: bolder;
   margin-bottom: 21px;
+}
+
+.jumbo {
+  display: flex;
+  gap: 20px;
+  background-color: #FFC300;
+  padding: 21px;
+}
+
+img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+button {
+  min-width: 200px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #117a65;
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+}
+
+button:hover {
+  background-color: #0a5949;
+}
+
+.padding {
+  padding: 10px;
+}
+
+.special-card {
+  flex-grow: 1;
+  border: 3px solid #117a65;
+  border-radius: 20px;
+  margin: 20px;
+  background-color: white;
+}
+
+.special-card img {
+  width: 100%;
+}
+
+.special-card:hover {
+  box-shadow: 3px 3px 20px black;
+}
+
+.price {
+  font-weight: bolder;
+  color: #FF5733;
+}
+
+.header {
+  justify-content: space-between;
+}
+
+.specials {
+  background-color: white;
+  padding: 10px;
+}
+
+.testimonials {
+  background-color: #FFC300;
+}
+
+.testimonial-card {
+  border: 3px solid #117a65;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.testimonial-card img {
+  width: 200px;
+  border-radius: 20px;
+  margin-right: 20px;
+  border: 1px solid #117a65;
+}
+
+.rate {
+  font-size: xx-large;
+}
+
+.about {
+  gap: 50px;
 }
