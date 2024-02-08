@@ -1,8 +1,8 @@
 import BookingForm from "./BookingForm"
 
-const BookingPage = () => {
+const BookingPage = ({availableTimes, availableSeats, formData, setFormData}) => {
     return(
-        <BookingForm />
+        <BookingForm availableTimes={availableTimes} availableSeats={availableSeats} formData={formData} setFormData={setFormData}/>
     )
 }
 
