@@ -16,7 +16,7 @@ const Main = () => {
 
     const availableSeats = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-    const updateTimes = (state, action) => {
+    const updateTimes = (state, date) => {
         return state
     }
 
@@ -29,7 +29,7 @@ const Main = () => {
             <Routes>
                 <Route path='/' element={<Homepage />} />
                 <Route path='/about' element={<Chicago />} />
-                <Route path='/booking' element={<BookingPage availableTimes={availableTimes} availableSeats={availableSeats} formData={formData} setFormData={setFormData}/>} />
+                <Route path='/booking' element={<BookingPage availableTimes={availableTimes} availableSeats={availableSeats} formData={formData} setFormData={setFormData} dispatch={dispatch}/>} />
             </Routes>
         </main>
     )

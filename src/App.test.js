@@ -1,8 +1,8 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen, fireEvent } from '@testing-library/react';
+import BookingForm from './components/BookingForm';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test('Renders the BookingForm heading', () => {
+  render(<BookingForm availableTimes={["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"]} availableSeats={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]} formData={()=>null} setFormData={()=>null} dispatch={()=>null}/>);
+  const headingElement = screen.getByText("Reserve a table");
+  expect(headingElement).toBeInTheDocument();
 });

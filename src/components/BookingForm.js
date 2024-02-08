@@ -1,10 +1,16 @@
 
-const BookingForm = ({availableTimes, availableSeats, formData, setFormData}) => {
+const BookingForm = ({availableTimes, availableSeats, formData, setFormData, dispatch}) => {
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+    }
+
+
 
     return(
         <>
             <h1 className="padding">Reserve a table</h1>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <div className="padding">
                     <label htmlFor="res-date" className="padding">Date</label>
                     <input
@@ -13,6 +19,7 @@ const BookingForm = ({availableTimes, availableSeats, formData, setFormData}) =>
                         name="date"
                         value={formData.date}
                         onChange={(e) => setFormData({...formData, date: e.target.value})}
+                        required
                     />
                 </div>
                 <div className="padding">
