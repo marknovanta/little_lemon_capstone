@@ -135,3 +135,15 @@ button:hover {
 .about {
   gap: 50px;
 }
+
+.confirm {
+  background-color: #0a5949;
+  color: white;
+  margin: 20px;
+  padding: 50px;
+  border-radius: 21px;
+}
+
+fieldset {
+  border-radius: 20px;
+}
