@@ -5,20 +5,34 @@ const Specials = () => {
             title: 'Bruschetta',
             description: 'Bread, tomato, olive oil, garlic',
             price: 4.99,
+            img: './assets/bruschetta.jpg',
         },
         {
             id: 2,
             title: 'Salad',
             description: 'Tomato, black olives, lettuce',
             price: 7.99,
+            img: './assets/salad.jpg',
         },
         {
             id: 3,
             title: 'Cake',
             description: 'creme, fruit, milk, butter',
             price: 4.99,
+            img: './assets/creme.jpg',
         },
     ]
+
+    const listItems = items.map((item) => 
+        <div key={item.id} className="special-card">
+            <img src={item.img} width="250px"/>
+            <div className="padding">
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+                <p className="price">${item.price}</p>
+            </div>
+        </div> 
+    ); 
 
     return(
         <div className="specials">
@@ -27,30 +41,7 @@ const Specials = () => {
                 <button>Menu</button>
             </div>
             <div className="flex-container">
-                <div className="special-card">
-                    <img src="./assets/bruschetta.jpg" width="250px"/>
-                    <div className="padding">
-                        <h3>{items[0]['title']}</h3>
-                        <p>{items[0]['description']}</p>
-                        <p className="price">${items[0]['price']}</p>
-                    </div>
-                </div>
-                <div className="special-card">
-                    <img src="./assets/salad.jpg" width="250px"/>
-                    <div className="padding">
-                        <h3>{items[1]['title']}</h3>
-                        <p>{items[1]['description']}</p>
-                        <p className="price">${items[1]['price']}</p>
-                    </div>
-                </div>
-                <div className="special-card">
-                    <img src="./assets/creme.jpg" width="250px"/>
-                    <div className="padding">
-                        <h3>{items[2]['title']}</h3>
-                        <p>{items[2]['description']}</p>
-                        <p className="price">${items[2]['price']}</p>
-                    </div>
-                </div>
+                {listItems}
             </div>
         </div>
     )
