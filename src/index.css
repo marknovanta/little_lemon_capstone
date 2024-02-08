@@ -12,9 +12,17 @@ code {
     monospace;
 }
 
+.nav-item {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-item:hover {
+  text-shadow: 3px 3px 20px yellow;
+}
+
 .flex-container {
   display: flex;
-
   align-items: stretch;
   justify-content: space-evenly;
 }

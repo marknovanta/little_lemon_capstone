@@ -1,13 +1,15 @@
+import { Link } from "react-router-dom"
+
 const Nav = () => {
     return(
         <nav>
             <ul className="flex-container">
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Menu</a></li>
-                <li><a>Reservations</a></li>
-                <li><a>Order online</a></li>
-                <li><a>Login</a></li>
+                <li><Link to="/" className="nav-item">Home</Link></li>
+                <li><Link to="/about" className="nav-item">About</Link></li>
+                <li><Link to="/menu" className="nav-item">Menu</Link></li>
+                <li><Link to="/reserve" className="nav-item">Reservations</Link></li>
+                <li><Link to="/order" className="nav-item">Order online</Link></li>
+                <li><Link to="/login" className="nav-item">Login</Link></li>
             </ul>
         </nav>
     )
